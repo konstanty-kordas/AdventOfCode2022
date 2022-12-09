@@ -61,7 +61,7 @@ stack.append(current[0])
 while len(stack) > 0:
     c = stack.pop()
     for i in c.children:
-        if i.file==False:
+        if i.file == False:
             if i.size >= needed:
                 print(i.size)
                 sizes.append(i.size)
